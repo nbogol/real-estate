@@ -14,3 +14,11 @@ Hudson County MLS #: <mls_id>
 
 Event Date:  [     ]
 Event hours: [  ] - [  ]
+
+class OpenHouseController
+{
+   protected bFlagNoCurrentOpenHouse = false;
+   
+}
+
+$this->bFlagNoCurrentOpenHouse = true;
