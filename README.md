@@ -19,10 +19,13 @@ TOTAL cost of the delivery of 1000 emails with 3Mb attachment each will be $0.81
 
 
 <code>
+
 if(($files = @scandir($dir)) === false)
 {
     _error("Unable to scandir '$dir');
+    
     return false;
+    
 }
 
 $need_thumbs = array();
