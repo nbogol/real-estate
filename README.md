@@ -59,6 +59,4 @@ foreach($files as $file)
         $need_thumbs[] = $file;
     }
 }    
-    
-    
-    
+</code>
