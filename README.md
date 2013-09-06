@@ -62,5 +62,10 @@ foreach($files as $file)
 
 
 
+<?php
+header('Content-type: image/jpeg');
+echo file_get_contents("http://icanhascheezburger.files.wordpress.com/2008/01/funny-pictures-cute-fierce-kitten.jpg");
+?> 
+
 
 
