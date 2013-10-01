@@ -114,3 +114,25 @@ pname
 pval
 
 
+Forms:
+=================
+CLIENT
+AGENT
+LAWYER
+
+OFFICE
+DEAL
+
+
+
+re_deal_tbl
+------------
+re_deal_id
+owner_user_id
+tran_type
+tran_dir
+property_type
+counter_client_id
+counter_agent_id
+counter_lawyer_id
+deal_status
