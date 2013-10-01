@@ -7,6 +7,9 @@ $doc_sys_config = array(
 	'type'	=> '<data provider type>', // XActiveRecord, ...
 	'class' => '<class name>',
 	'criteria' => '<criteria>', // params will be passed when object is instantiated (:client_id, :property_id, ...)
+	'params' => array(
+		':<param name>' => '<User state name>', // Yii::app()->user->getState($state_name)
+	),
 
 ), // data_provider
 
@@ -98,7 +101,11 @@ status
 status_notes
 complete_time
 
-
-
+job_detail_pdf_doc_param_tbl
+----------------------------
+job_detail_param_id
+job_detail_id
+pname
+pval
 
 
