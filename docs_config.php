@@ -72,3 +72,33 @@ $doc_sys_config = array(
 ), // prop_codes
 
 ); // END: doc_sys_config
+
+?>
+
+job_tbl
+-------
+job_id
+owner
+job_type - EMAIL,CALL,PDF-DOC,...
+job_status - NEW,ACTIVE,DONE,ERROR,ON-HOLD
+status_notes
+start_time
+priority
+complete_time
+notify_type - EMAIL,SMS
+notify_address - ... (if null use default notification address or phone)
+
+job_detail_pdf_doc_tbl
+----------------------
+job_detail_id
+job_id
+doc_set_code
+doc_code
+status
+status_notes
+complete_time
+
+
+
+
+
