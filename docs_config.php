@@ -83,7 +83,7 @@ job_type - EMAIL,CALL,PDF-DOC,...
 job_status - NEW,ACTIVE,DONE,ERROR,ON-HOLD
 status_notes
 start_time
-priority
+priority - LOW,MED,HI,SYS
 complete_time
 notify_type - EMAIL,SMS
 notify_address - ... (if null use default notification address or phone)
