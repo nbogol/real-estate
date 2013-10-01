@@ -1,12 +1,12 @@
-
 <?php
 
 $doc_sys_config = array(
 
 'data_provider' => array( // top level data provider
 
-	'class' => '<class name>'
-	'criteria' => '<criteria>' // params will be passed when object is instantiated (:client_id, :property_id, ...)
+	'type'	=> '<data provider type>', // XActiveRecord, ...
+	'class' => '<class name>',
+	'criteria' => '<criteria>', // params will be passed when object is instantiated (:client_id, :property_id, ...)
 
 ), // data_provider
 
@@ -21,7 +21,10 @@ $doc_sys_config = array(
 
 		'field_map' => array(
 
-			'<pdf_field_name>' => array('dp_member' => '<data provider member name>'),
+			'<pdf_field_name>' => array(
+				'dp_member' => '<data provider member name>',
+				'callback'  => '<callback method>', // 
+			),
 
 		), // field_map
 
