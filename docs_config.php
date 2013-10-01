@@ -20,7 +20,7 @@ $doc_sys_config = array(
 		'file'  => '<path to file relative to sysy templates dir>',
 		'descr' => '<description>',
 
-		'data_provider' => array(), // document level data provider, overrides 'set' level provider
+		'data_provider' => array(), // document level data provider, overrides (merge) 'set' level provider 
 
 		'field_map' => array(
 
@@ -51,6 +51,8 @@ $doc_sys_config = array(
 		'data_provider' => array(), // set level data provider, overrides 'top' level provider
 
 		'props' => array(
+			'<property name>' => '<propverty value>',
+			
 			'TRAN_TYPE'   => 'PURCHASE',  // PURCHASE, RENT
 			'TRAN_DIR'    => 'BUY',       // BUY or SELL
 			'PROP_TYPE'   => '1F-HOUSE',  // 1F-HOUSE, MF-HOUSE, APARTMENT, ...
