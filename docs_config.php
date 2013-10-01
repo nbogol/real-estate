@@ -87,13 +87,13 @@ job_tbl
 -------
 job_id
 owner
-job_type - EMAIL,CALL,PDF-DOC,...
-job_status - NEW,ACTIVE,DONE,ERROR,ON-HOLD
+job_type - EMAIL, CALL, PDF-DOC,...
+job_status - NEW, ACTIVE, DONE, ERROR, ON-HOLD
 status_notes
 start_time
-priority - LOW,MED,HI,SYS
+priority - LOW, REG, HI, SYS
 complete_time
-notify_type - EMAIL,SMS
+notify_type - EMAIL, SMS
 notify_address - ... (if null use default notification address or phone)
 
 job_detail_pdf_doc_tbl
@@ -102,7 +102,7 @@ job_detail_id
 job_id
 doc_set_code
 doc_code
-status
+status - NEW, ACTIVE (in process), DONE, ERROR
 status_notes
 complete_time
 
@@ -110,6 +110,7 @@ job_detail_pdf_doc_param_tbl
 ----------------------------
 job_detail_param_id
 job_detail_id
+data_provider
 pname
 pval
 
