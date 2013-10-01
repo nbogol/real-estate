@@ -2,14 +2,16 @@
 
 $doc_sys_config = array(
 
-'data_provider' => array( // top level data provider
+'data_providers' => array( // top level data provider
+	'<dp name>' => array(
 
-	'type'	=> '<data provider type>', // XActiveRecord, ...
-	'class' => '<class name>',
-	'criteria' => '<criteria>', // params will be passed when object is instantiated (:client_id, :property_id, ...)
-	'params' => array(
-		':<param name>' => '<User state name>', // Yii::app()->user->getState($state_name)
-	),
+		'type'	=> '<data provider type>', // XActiveRecord, ...
+		'class' => '<class name>',
+		'criteria' => '<criteria>', // params will be passed when object is instantiated (:client_id, :property_id, ...)
+		'params' => array(
+			':<param name>' => '<User state name>', // Yii::app()->user->getState($state_name)
+		),
+	), // data provider name
 
 ), // data_provider
 
@@ -20,11 +22,12 @@ $doc_sys_config = array(
 		'file'  => '<path to file relative to sysy templates dir>',
 		'descr' => '<description>',
 
-		'data_provider' => array(), // document level data provider, overrides (merge) 'set' level provider 
+		'data_provider' => '<data provider name>', 
 
 		'field_map' => array(
 
 			'<pdf_field_name>' => array(
+				'data_provider' => '<data provider name>', // optional
 				'dp_member' => '<data provider member name>',
 				'callback'  => '<callback method>', // 
 			),
