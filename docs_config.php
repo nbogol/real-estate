@@ -56,8 +56,7 @@ $doc_sys_config = array(
 		'props' => array(
 			'<property name>' => '<propverty value>',
 			
-			'TRAN_TYPE'   => 'PURCHASE',  // PURCHASE, RENT
-			'TRAN_DIR'    => 'BUY',       // BUY or SELL
+			'TRAN_DIR'    => 'BUY',       // BUY or SELL or RENT
 			'PROP_TYPE'   => '1F-HOUSE',  // 1F-HOUSE, MF-HOUSE, APARTMENT, ...
 			'TRAN_STATE'  => 'NY',        // transaction state
 			'TRAN_COUNTY' => 'MANHATTAN', // transaction county
@@ -130,10 +129,13 @@ re_deal_tbl
 ------------
 re_deal_id
 owner_user_id
-tran_type
-tran_dir
-property_type
+tran_dir // BUY or SELL or RENT
+property_id
+client_id
+agent_id
+lawyer_id
 counter_client_id
 counter_agent_id
 counter_lawyer_id
 deal_status
+
