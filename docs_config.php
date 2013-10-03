@@ -80,6 +80,23 @@ $doc_sys_config = array(
 
 ); // END: doc_sys_config
 
+
+
+
+$field_map_arr = array(
+	
+	'DB_Property' => array(
+		'Property street address' => 'PropertyStreetAddress',
+		'Property complete address' => 'PropertyCompleteAddress',
+	),
+
+	'DB_Client' => array(
+		'Client name' => 'name',
+		'Client main phone' => 'MainPhone',
+	),
+);
+
+
 ?>
 
 job_tbl
