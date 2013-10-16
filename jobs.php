@@ -12,6 +12,7 @@ job_tbl
 - owner_user_id
 - job_type (SMS, VOICE, EMAIL, PDFGEN, ALERT, ALARM)
 - status (NEW,ACTIVE,COMPLETE,ERROR)
+- status_notes
 - schedule (ONE_TIME, REPEAT, ... ?)
 - priority
 - enrty_time
@@ -21,7 +22,48 @@ job_tbl
 - on_complete (<yii component name>.<method>(job_id))
 - on_error (<yii component name>.<method>(job_id))
 
-job_pdfgen_detail_tbl
----------------------
-- job_detail_id
-- job_id
+
+job_detail_pdf_doc_tbl
+----------------------
+job_detail_id
+job_id
+doc_set_code
+doc_code
+status - NEW, ACTIVE (in process), DONE, ERROR
+status_notes
+complete_time
+
+job_detail_pdf_doc_param_tbl
+----------------------------
+job_detail_param_id
+job_detail_id
+data_provider
+pname
+pval
+
+
+Forms:
+=================
+CLIENT
+AGENT
+LAWYER
+
+OFFICE
+DEAL
+
+
+
+re_deal_tbl
+------------
+re_deal_id
+owner_user_id
+tran_dir // BUY or SELL or RENT
+property_id
+client_id
+agent_id
+lawyer_id
+counter_client_id
+counter_agent_id
+counter_lawyer_id
+deal_status
+
