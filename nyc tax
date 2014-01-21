@@ -1,2 +1,9 @@
 http://nycprop.nyc.gov/nycproperty/nynav/jsp/selectbbl.jsp
 08720-7504
+
+
+Tax map
+http://gis.nyc.gov/taxmap/map.htm?searchType=BblSearch&featureTypeName=EVERY_BBL&borough=Brooklyn&block=8720&lot=7504
+
+apartment tax record:
+http://a836-acris.nyc.gov/bblsearch/bblsearch.asp?borough=3&block=8720&lot=1623
