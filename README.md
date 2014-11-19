@@ -1,3 +1,8 @@
+
+javascript crop tools
+http://www.pixelzdesign.com/blog_view.php?id=59
+
+
 Email pricing using our delivery system:
 - (1) $0.25 per 1000 emails sent
 - (2) $0.39 per 1Gb of data out (message body and attachments)
